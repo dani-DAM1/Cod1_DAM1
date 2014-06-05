@@ -52,23 +52,13 @@ int main(void){
             printf("\tEntra una opcio (0-4)\n\t");
             scanf("%d",&opcio);
         }while(opcio<0&&opcio>4);
+        
         switch (opcio){
-            case 0:
-                return 0;
-            break;
-            case 1:
-                introduir(num);
-                num++;
-            break;
-            case 2:
-                mostrar();
-            break;
-            case 3:
-                modificar();
-            break;
-            case 4:
-                eliminar();
-            break;
+            case 0: return 0;              break;
+            case 1: introduir(num); num++; break;
+            case 2: mostrar();             break;
+            case 3: modificar();           break;
+            case 4: eliminar();            break;
         }
    }while(opcio!=0);
    return 0;
